@@ -5,6 +5,13 @@
  * 
  * @package smashit
  */
+
+get_header();
 ?>
 
-<h1>Welcome heading</h1>
+<main id="main-content">
+  <h1>Welcome heading</h1>
+</main>
+
+<?php
+get_footer();
