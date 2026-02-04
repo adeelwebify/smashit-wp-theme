@@ -15,5 +15,6 @@
   <?php wp_head(); ?>
 </head>
 
-<body <?= body_class() ?>>
+<body <?php body_class() ?>>
+  <?php wp_body_open() ?>
   <header>This is header</header>

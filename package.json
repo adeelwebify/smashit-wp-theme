@@ -1,0 +1,28 @@
+{
+	"name": "smashit-wp-theme",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "vite build --watch",
+		"build": "vite build"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/adeelwebify/smashit-wp-theme.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "commonjs",
+	"bugs": {
+		"url": "https://github.com/adeelwebify/smashit-wp-theme/issues"
+	},
+	"homepage": "https://github.com/adeelwebify/smashit-wp-theme#readme",
+	"devDependencies": {
+		"@tailwindcss/vite": "^4.1.18",
+		"autoprefixer": "^10.4.24",
+		"tailwindcss": "^4.1.18",
+		"vite": "^7.3.1"
+	}
+}
