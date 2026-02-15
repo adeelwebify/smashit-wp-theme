@@ -1,0 +1,14 @@
+{
+	"name": "adeel/smashit-wp-theme",
+	"autoload": {
+		"psr-4": {
+			"Smashit\\": "inc/"
+		}
+	},
+	"authors": [
+		{
+			"name": "Adeel"
+		}
+	],
+	"require": {}
+}

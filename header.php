@@ -17,6 +17,6 @@
 
 <body <?php body_class() ?>>
   <?php wp_body_open() ?>
-  <header class="bg-white dark:bg-gray-900">
+  <header class="bg-slate-100 dark:bg-gray-900">
     <?php get_template_part('template-parts/header/nav') ?>
   </header>

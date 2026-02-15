@@ -6,18 +6,17 @@
  * @package smashit
  */
 
-function smashit_enqueue_scripts() {
-  // Register styles
-  wp_register_style('smashit-stylesheet', get_template_directory_uri() . '/assets/dist/css/main.css');
+use Smashit\Core\Smashit_Theme;
 
-  // Register scripts
-  wp_register_script('smashit-script', get_template_directory_uri() . '/assets/dist/js/main.js', [], false, true);
-
-  // Enqueue styles
-  wp_enqueue_style('smashit-stylesheet');
-
-  // Enqueue scripts
-  wp_enqueue_script('smashit-script');
+if (!defined(('SMASHIT_PATH'))) {
+  define('SMASHIT_PATH', untrailingslashit(get_template_directory()));
 }
 
-add_action('wp_enqueue_scripts', 'smashit_enqueue_scripts');
+if (!defined(('SMASHIT_URL'))) {
+  define('SMASHIT_URL', untrailingslashit(get_template_directory_uri()));
+}
+
+require_once SMASHIT_PATH . '/vendor/autoload.php';
+require_once SMASHIT_PATH . '/inc/Core/Singleton.php';
+require_once SMASHIT_PATH . '/inc/Core/Smashit_Theme.php';
+Smashit_Theme::get_instance();
